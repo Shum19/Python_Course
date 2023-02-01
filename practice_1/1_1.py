@@ -10,6 +10,3 @@ n = int(input("Input Distance per Day:\n"));
 m = int(input("Input Distance:\n"));
 result = -(-m // n);
 print (result);
-
-
-
