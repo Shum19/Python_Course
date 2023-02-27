@@ -13,8 +13,7 @@
 import os;
 os.system('clear')
 def true_rythm (str_1):
-    list_1 = ['а', 'е', 'ё', 'и', 'й', 'о', 'у', 'э', 'ю', 'я', 
-              'А', 'Е', 'Ё', 'И', 'Й', 'О', 'У', 'Э', 'Ю', 'Я']
+    list_1 = ['а', 'е', 'ё', 'и', 'й', 'о', 'у', 'э', 'ю', 'я', 'А', 'Е', 'Ё', 'И', 'Й', 'О', 'У', 'Э', 'Ю', 'Я']
     str_list = str_1.split()
     vowel_list = []
     count = 0
@@ -24,7 +23,7 @@ def true_rythm (str_1):
             if j in list_1:
                 count += 1
         vowel_list.append(count)
-    if all(vowel_list):
+    if all(vowel_list) and len(set(vowel_list)) == 1:
         return 'Парам пам-пам'
     else:
         return 'Парам' 
