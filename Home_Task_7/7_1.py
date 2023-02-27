@@ -16,19 +16,18 @@ def true_rythm (str_1):
     list_1 = ['а', 'е', 'ё', 'и', 'й', 'о', 'у', 'э', 'ю', 'я', 
               'А', 'Е', 'Ё', 'И', 'Й', 'О', 'У', 'Э', 'Ю', 'Я']
     str_list = str_1.split()
-    count_1 = 0
-    count_2 = 0
-    for i in range(len(str_list) - 1):
+    vowel_list = []
+    count = 0
+    for i in range(len(str_list)):
+        count = 0
         for j in str_list[i]:
             if j in list_1:
-                count_1 += 1;
-        for k in str_list[i + 1]:
-            if k in list_1:
-                count_2 += 1
-    if count_1 == count_2:
+                count += 1
+        vowel_list.append(count)
+    if all(vowel_list):
         return 'Парам пам-пам'
     else:
-        return 'Парам пам'       
+        return 'Парам' 
 
 test = true_rythm(input())
 print(test)
