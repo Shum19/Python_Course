@@ -1,7 +1,3 @@
 1 R F G 555
 2 H J K 333
 3 U I R 444
-4 W E R 333
-5 S F E 322
-6 H H K 555
-7 Q A F 888
